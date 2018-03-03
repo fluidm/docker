@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+docker run -it --rm \
+    -v "$PWD":/app \
+    --user $(id -u):$(id -g) \
+    kinsz/private:phppsql php $@
+
