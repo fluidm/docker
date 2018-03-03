@@ -92,3 +92,9 @@ RUN apt-get install -y libssl-dev && \
     make install && \
     cd /home && \
     rm ncrack.tar.gz
+
+# whatweb
+RUN apt-get install -y bsdmainutils ruby && \
+    git clone https://github.com/urbanadventurer/WhatWeb.git /home/whatweb && \
+    cd /home//whatweb/ && \
+    make install
