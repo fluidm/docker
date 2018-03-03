@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+docker run -it --rm \
+    -v "$PWD":/app \
+    --user $(id -u):$(id -g) \
+    -p 7777:7777 \
+    kinsz/test:prox node server.js 7777 $@

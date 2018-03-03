@@ -1,0 +1,17 @@
+{
+  "name": "prox",
+  "version": "1.0.0",
+  "description": "TCP proxy server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon --inspect server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "log4js": "^2.5.2",
+    "hexy": "^0.2.10"
+  }
+}

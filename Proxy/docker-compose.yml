@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+    prox:
+        image: kinsz/test:prox
+        build: .
+        ports:
+            - '7777:7777'
+        command: ["node", "server.js", "7777", "172.22.213.32", "80"]
+        volumes:
+          - "./:/usr/src/app"
+
+
