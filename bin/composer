@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+echo "Current working directory: '"$(pwd)"'"
+docker run --rm \
+    -v "$(pwd)":/app \
+    -v ~/.composer:/composer \
+    --user $(id -u):$(id -g) \
+    composer/composer:1.0-alpine $@

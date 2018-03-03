@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+sudo rm /usr/bin/php
+sudo ln -s `pwd`/../php/php /usr/bin/
+
+sudo rm /usr/bin/composer
+sudo ln -s `pwd`/composer /usr/bin/
+
+sudo rm /usr/bin/geth
+sudo ln -s `pwd`/geth /usr/bin/
+
+sudo rm /usr/bin/node
+sudo ln -s `pwd`/node /usr/bin/
+
+sudo rm /usr/bin/node-do
+sudo ln -s `pwd`/node-do /usr/bin/
+
+sudo rm /usr/bin/npm
+sudo ln -s `pwd`/npm /usr/bin/
+
+sudo rm /usr/bin/kali
+sudo ln -s `pwd`/../KaliLinux/kali /usr/bin/
+
+
+
+

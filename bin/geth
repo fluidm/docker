@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker run -it --user $(id -u) --rm kunstmaan/ethereum-geth $@
